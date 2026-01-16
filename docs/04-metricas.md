@@ -1,22 +1,5 @@
 # Avaliação e Métricas
 
-> [!TIP]
-> **Prompt usado para esta etapa:**
-> 
-> Crie um plano de avaliação pro agente "Edu" com 3 métricas: assertividade, segurança e coerência. Inclua 4 cenários de teste e um formulário simples de feedback. Preencha o template abaixo.
->
-> [cole ou anexe o template `04-metricas.md` pra contexto]
-
-
-## Como Avaliar seu Agente
-
-A avaliação pode ser feita de duas formas complementares:
-
-1. **Testes estruturados:** Você define perguntas e respostas esperadas;
-2. **Feedback real:** Pessoas testam o agente e dão notas.
-
----
-
 ## Métricas de Qualidade
 
 | Métrica | O que avalia | Exemplo de teste |
@@ -25,14 +8,11 @@ A avaliação pode ser feita de duas formas complementares:
 | **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe |
 | **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador |
 
-> [!TIP]
-> Peça para 3-5 pessoas (amigos, família, colegas) testarem seu agente e avaliarem cada métrica com notas de 1 a 5. Isso torna suas métricas mais confiáveis! Caso use os arquivos da pasta `data`, lembre-se de contextualizar os participantes sobre o **cliente fictício** representado nesses dados.
-
 ---
 
-## Exemplos de Cenários de Teste
+## Cenários de Teste
 
-Crie testes simples para validar seu agente:
+Testes simples para validar o agente:
 
 ### Teste 1: Consulta de gastos
 - **Pergunta:** "Quanto gastei com alimentação?"
@@ -47,7 +27,7 @@ Crie testes simples para validar seu agente:
 ### Teste 3: Pergunta fora do escopo
 - **Pergunta:** "Qual a previsão do tempo?"
 - **Resposta esperada:** Agente informa que só trata de finanças
-- **Resultado:** [X] Correto  [ ] Incorreto
+- **Resultado:** [] Correto  [X] Incorreto
 
 ### Teste 4: Informação inexistente
 - **Pergunta:** "Quanto rende o produto BBDC3 na Bovespa?"
@@ -75,7 +55,7 @@ Use com os participantes do teste:
 Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
-- [Liste aqui]
+- Consulta de gastos, identificação de onde o planejamento finaceiro do cliente deve focar para atingir o objetivo estipulado, sugestão de ações para organizar melhor as finanças.
 
 **O que pode melhorar:**
-- [Liste aqui]
+- Persistência de informações, perguntas fora do escopo e respostas longas.
