@@ -1,18 +1,21 @@
-# 🎓 Edu - Educador Financeiro Inteligente
+# 🎓 FinGuard - Guarda Financeiro Inteligente
 
-> Agente de IA Generativa que ensina conceitos de finanças pessoais de forma simples e personalizada, usando os próprios dados do cliente como exemplos práticos.
+> Agente de IA generativa que analisa dados de transações e o perfil do cliente para organizar gastos em categorias claras, gerar insights objetivos e apoiar o controle financeiro, sem realizar recomendações diretas de investimentos.
 
-## 💡 O Que é o Edu?
+## 💡 O Que é o FinGuard?
 
-O Edu é um educador financeiro que **ensina**, não recomenda. Ele explica conceitos como reserva de emergência, tipos de investimentos e análise de gastos usando uma abordagem didática e exemplos concretos baseados no perfil do cliente.
+O FinGuard é um guarda financeiro digital que atua de forma consultiva e educativa, transformando as transações do próprio cliente em informações claras e acionáveis.
+Ele organiza os dados financeiros, identifica padrões de consumo e gera insights sempre alinhados às metas definidas pelo cliente, como controle de gastos, reserva de emergência ou a aquisição de um bem específico.
 
-**O que o Edu faz:**
-- ✅ Explica conceitos financeiros de forma simples
-- ✅ Usa dados do cliente como exemplos práticos
-- ✅ Responde dúvidas sobre produtos financeiros
-- ✅ Analisa padrões de gastos de forma educativa
+**O que o FinGuard faz:**
+- ✅ Consolida as informações financeiras do cliente em uma visão clara e de fácil consulta
+- ✅ Classifica e resume as transações em categorias objetivas e padronizadas
+- ✅ Analisa os gastos considerando as metas financeiras declaradas pelo cliente
+- ✅ Utiliza o histórico do próprio cliente como base para exemplos, comparações e acompanhamento de evolução
+- ✅ Gera insights sobre como os hábitos de consumo impactam o progresso em relação às metas
+- ✅ Apoia o planejamento financeiro por meio de simulações e estratégias simples, sempre alinhadas aos objetivos definidos
 
-**O que o Edu NÃO faz:**
+**O que o FinGuard NÃO faz:**
 - ❌ Não recomenda investimentos específicos
 - ❌ Não acessa dados bancários sensíveis
 - ❌ Não substitui um profissional certificado
@@ -30,7 +33,7 @@ flowchart TD
 
 **Stack:**
 - Interface: Streamlit
-- LLM: Ollama (modelo local `gpt-oss`)
+- LLM: Ollama (modelo local `qwen2.5:3b`)
 - Dados: JSON/CSV mockados
 
 ## 📁 Estrutura do Projeto
@@ -39,8 +42,6 @@ flowchart TD
 ├── data/                          # Base de conhecimento
 │   ├── perfil_investidor.json     # Perfil do cliente
 │   ├── transacoes.csv             # Histórico financeiro
-│   ├── historico_atendimento.csv  # Interações anteriores
-│   └── produtos_financeiros.json  # Produtos para ensino
 │
 ├── docs/                          # Documentação completa
 │   ├── 01-documentacao-agente.md  # Caso de uso e persona
@@ -59,7 +60,7 @@ flowchart TD
 
 ```bash
 # Baixar em: ollama.com
-ollama pull gpt-oss
+ollama pull qwen2.5:3b
 ollama serve
 ```
 
@@ -69,7 +70,7 @@ ollama serve
 pip install streamlit pandas requests
 ```
 
-### 3. Rodar o Edu
+### 3. Rodar o FinGuard
 
 ```bash
 streamlit run src/app.py
@@ -77,11 +78,11 @@ streamlit run src/app.py
 
 ## 🎯 Exemplo de Uso
 
-**Pergunta:** "O que é CDI?"  
-**Edu:** "CDI é uma taxa de referência usada pelos bancos. Quando um investimento rende '100% do CDI', significa que ele acompanha essa taxa. Hoje o CDI está próximo da Selic. Quer que eu explique a diferença entre os dois?"
+**Pergunta:** "Quanto ainda posso gastar no mês de dezembro?"  
+**FinGuard:** "CDI é uma taxa de referência usada pelos bancos. Quando um investimento rende '100% do CDI', significa que ele acompanha essa taxa. Hoje o CDI está próximo da Selic. Quer que eu explique a diferença entre os dois?"
 
 **Pergunta:** "Onde estou gastando mais?"  
-**Edu:** "Olhando suas transações de outubro, sua maior despesa é moradia (R$ 1.380), seguida de alimentação (R$ 570). Juntas, representam quase 80% dos seus gastos. Isso é bem comum! Quer que eu explique algumas estratégias de organização?"
+**FinGuard:** "Olhando suas transações de outubro, sua maior despesa é moradia (R$ 1.380), seguida de alimentação (R$ 570). Juntas, representam quase 80% dos seus gastos. Isso é bem comum! Quer que eu explique algumas estratégias de organização?"
 
 ## 📊 Métricas de Avaliação
 
