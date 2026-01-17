@@ -79,7 +79,7 @@ streamlit run src/app.py
 ## 🎯 Exemplo de Uso
 
 **Pergunta:** "Quanto ainda posso gastar no mês de dezembro?"  
-**FinGuard:** "CDI é uma taxa de referência usada pelos bancos. Quando um investimento rende '100% do CDI', significa que ele acompanha essa taxa. Hoje o CDI está próximo da Selic. Quer que eu explique a diferença entre os dois?"
+**FinGuard:** "No mês de dezembro entraram R$ 5.0000 de receita e saíram R$ 2.450. Portanto, baseado nos dados fornecidos e sem considerar possíveis futuras transações ou alterações no perfil do investidor, você pode gastar até: R$ 2550.0 neste mês de dezembro."
 
 **Pergunta:** "Onde estou gastando mais?"  
 **FinGuard:** "Olhando suas transações de outubro, sua maior despesa é moradia (R$ 1.380), seguida de alimentação (R$ 570). Juntas, representam quase 80% dos seus gastos. Isso é bem comum! Quer que eu explique algumas estratégias de organização?"
