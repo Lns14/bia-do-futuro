@@ -4,7 +4,7 @@
 
 | Arquivo | Formato | Para que serve no FinGuard? |
 |---------|---------|---------------------|
-| `planilha_gastos.csv` | CSV | Utilizada para registrar e analisar os gastos mensais do cliente. Ela reúne todas as entradas e saídas financeiras, permitindo o acompanhamento detalhado dos valores ao longo do mês. |
+| `perfil_investidor.json` | JSON | Personalizar as explicações sobre as dúvidas e necessidades de aprendizado do cliente. |
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente e usar essas informações de forma didática. |
 
 ---
