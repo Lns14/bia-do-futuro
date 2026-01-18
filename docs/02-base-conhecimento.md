@@ -15,14 +15,31 @@
 ### Como os dados são carregados?
 
 Arquivos carregados via código.
-
 ```
+import pandas as pd
+import json
+
+# Acesso aos dados do usuário
+transacoes = pd.read_csv(caminho)
+with open(caminho, 'r', encoding='utf-8') as f:
+    perfil = json.loads(f.read())
+with open(caminho, 'r', encoding='utf-8') as f:
+    limites = json.loads(f.read())
+```
+
+---
 
 ### Como os dados são usados no prompt?
 
 Para simplificar, podemos simplesmente "injetar" os dados em nosso prompt, garantindo que o Agente tenha o melhor contexto possível.
 
-```text
+```
+DADOS DO CLIENTE:
+- Nome: João Silva
+- Perfil: Moderado
+- Objetivo: Construir reserva de emergência
+- Reserva atual: R$ 10.000 (meta: R$ 15.000)
+
 TRANSACOES DO CLIENTE (data/transacoes.csv):
 data,descricao,categoria,valor,tipo
 2025-10-01,Salário,receita,5000.00,entrada
