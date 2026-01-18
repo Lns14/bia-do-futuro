@@ -47,11 +47,12 @@ Use com os participantes do teste:
 
 | Métrica | Pergunta | Nota (1-5) |
 |---------|----------|------------|
-| Assertividade | "As respostas responderam suas perguntas?" | ___ |
-| Segurança | "As informações pareceram confiáveis?" | ___ |
-| Coerência | "A linguagem foi clara e fácil de entender?" | ___ |
+| Assertividade | "As respostas responderam suas perguntas?" | 5 |
+| Segurança | "As informações pareceram confiáveis?" | 5 |
+| Coerência | "A linguagem foi clara e fácil de entender?" | 4 |
 
 **Comentário aberto:** O que você achou desta experiência e o que poderia melhorar?
+A experiência cumpre o seu objetivo de ser consultivo e dar visão das finanças de maneira simplificada. Porém poderia melhorar na maneira como as informações são passadas para o usuário, trazendo mais objetividade e mais clareza.
 
 ---
 
