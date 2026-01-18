@@ -6,6 +6,7 @@
 |---------|---------|---------------------|
 | `perfil_investidor.json` | JSON | Personalizar as explicações sobre as dúvidas e necessidades de aprendizado do cliente. |
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente e usar essas informações de forma didática. |
+| `limites.json` | JSON | Contém os limites de gastos definidos pelo cliente por categoria ou tipo de despesa. Esses dados são utilizados para monitorar a proximidade ou o ultrapassamento dos limites estabelecidos. O agente analisa o padrão de gastos do cliente para gerar alertas preventivos e explica, de forma didática, como o estouro do limite pode impactar o planejamento financeiro. |
 
 ---
 
@@ -35,11 +36,30 @@ data,descricao,categoria,valor,tipo
 2025-10-20,Academia,saude,99.00,saida
 2025-10-25,Combustível,transporte,250.00,saida
 
-Planilha de gastos (data/planilha_gastos.csv):
-nome,data,tipo_pagamento,categoria,valor
-Aluguel,2025-09-15,Pix,Contas,R$800,00
-Internet,2025-09-05,Cartão de débito,Contas,R$100,00
-Uber,2025-09-30,Cartão de crédito,Transporte,R$200,00
+Limites de gastos (data/limites.json):
+[
+  {
+    "alerta": "Gastos com transporte (Uber, 99, etc)",
+    "limite": "10% da receita mensal",
+    "data_limite": "até dia 20 de cada mês"
+  },
+  {
+    "alerta": "Gastos com alimentação fora de casa",
+    "limite": "15% da receita mensal",
+    "data_limite": "até dia 25 de cada mês"
+  },
+  {
+    "alerta": "Gastos com lazer",
+    "limite": "8% da receita mensal",
+    "data_limite": "até dia 28 de cada mês"
+  },
+  {
+    "alerta": "Gastos no cartão de crédito",
+    "limite": "30% da receita mensal",
+    "data_limite": "até o fechamento da fatura"
+  }
+]
+
 ```
 
 ---
@@ -56,5 +76,12 @@ RESUMO DE GASTOS:
 - Saúde: R$ 180
 - Lazer: R$ 55,90
 - Total de saídas: R$ 2.488,90
+
+RESUMO DE LIMITES DEFINIDOS PELO CLIENTE:
+
+- Transporte: limite de 10% da receita mensal, com data de referência até o dia 20 de cada mês
+- Alimentação fora de casa: limite de 15% da receita mensal, com data de referência até o dia 25 de cada mês
+- Lazer: limite de 8% da receita mensal, com data de referência até o dia 28 de cada mês
+- Cartão de crédito: limite de 30% da receita mensal, considerando o fechamento da fatura
 
 ```
