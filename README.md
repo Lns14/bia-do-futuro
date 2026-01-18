@@ -11,6 +11,7 @@ Ele organiza os dados financeiros, identifica padrões de consumo e gera insight
 - ✅ Consolida as informações financeiras do cliente em uma visão clara e de fácil consulta
 - ✅ Classifica e resume as transações em categorias objetivas e padronizadas
 - ✅ Analisa os gastos considerando as metas financeiras declaradas pelo cliente
+- ✅ Alerta sobre os gastos considerando os limites financeiros declaradas pelo cliente
 - ✅ Utiliza o histórico do próprio cliente como base para exemplos, comparações e acompanhamento de evolução
 - ✅ Gera insights sobre como os hábitos de consumo impactam o progresso em relação às metas
 - ✅ Apoia o planejamento financeiro por meio de simulações e estratégias simples, sempre alinhadas aos objetivos definidos
@@ -42,13 +43,13 @@ flowchart TD
 ├── data/                          # Base de conhecimento
 │   ├── perfil_investidor.json     # Perfil do cliente
 │   ├── transacoes.csv             # Histórico financeiro
+│   ├── limites.json               # Limites de gastos do cliente
 │
 ├── docs/                          # Documentação completa
 │   ├── 01-documentacao-agente.md  # Caso de uso e persona
 │   ├── 02-base-conhecimento.md    # Estratégia de dados
 │   ├── 03-prompts.md              # System prompt e exemplos
 │   ├── 04-metricas.md             # Avaliação de qualidade
-│   └── 05-pitch.md                # Apresentação do projeto
 │
 └── src/
     └── app.py                     # Aplicação Streamlit
