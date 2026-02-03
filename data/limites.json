@@ -1,0 +1,26 @@
+{
+  "receita_mensal": 5000,
+  "limites": [
+    {
+      "categoria": "restaurante",
+      "regra": {
+        "tipo": "percentual_da_receita",
+        "valor": 0.05
+      }
+    },
+    {
+      "categoria": "lazer",
+      "regra": {
+        "tipo": "percentual_da_receita",
+        "valor": 0.10
+          }
+    },
+    {
+      "categoria": "transporte",
+      "regra": {
+        "tipo": "percentual_da_receita",
+        "valor": 0.10
+      }
+    }
+  ]
+}
